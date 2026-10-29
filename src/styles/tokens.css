@@ -1,0 +1,110 @@
+:root {
+  /* Typography Tokens */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.8125rem;  /* 13px */
+  --font-size-base: 0.9375rem;/* 15px */
+  --font-size-md: 1rem;       /* 16px */
+  --font-size-lg: 1.1875rem;  /* 19px */
+  --font-size-xl: 1.5rem;     /* 24px */
+  --font-size-2xl: 2rem;      /* 32px */
+  --font-size-3xl: 2.5rem;    /* 40px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.15;
+  --line-height-heading: 1.25;
+  --line-height-compact: 1.4;
+  --line-height-body: 1.65;
+
+  /* Color Palette - Warm Neutral Architectural Theme */
+  --color-canvas: #FAFAF8;            /* 60% dominant warm neutral */
+  --color-canvas-subtle: #F4F2EE;     /* Soft warm plaster */
+  --color-surface: #FFFFFF;           /* Card & container surface */
+  --color-surface-hover: #F8F7F4;
+  --color-surface-elevated: #FFFFFF;
+
+  --color-border-subtle: rgba(0, 0, 0, 0.06);
+  --color-border: #E8E5DF;            /* Hairline structural border */
+  --color-border-focus: #1C1917;
+
+  /* Typography Colors */
+  --color-text-primary: #1C1917;      /* Deep obsidian stone */
+  --color-text-secondary: #57534E;    /* Warm stone gray */
+  --color-text-muted: #78716C;        /* Soft architectural note */
+  --color-text-inverse: #FFFFFF;
+
+  /* Accent Colors (10% budget) */
+  --color-accent: #9A7B56;            /* Warm French Oak / Burnished Brass */
+  --color-accent-hover: #846845;
+  --color-accent-subtle: #F5EFE6;
+
+  /* Status Tokens */
+  --color-status-new-bg: #EFF6FF;
+  --color-status-new-text: #1D4ED8;
+  --color-status-contacted-bg: #FEF3C7;
+  --color-status-contacted-text: #B45309;
+  --color-status-qualified-bg: #F0FDF4;
+  --color-status-qualified-text: #15803D;
+  --color-status-closed-bg: #F3F4F6;
+  --color-status-closed-text: #4B5563;
+
+  --color-danger: #DC2626;
+  --color-danger-subtle: #FEF2F2;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-10: 2.5rem;  /* 40px */
+  --space-12: 3rem;    /* 48px */
+  --space-16: 4rem;    /* 64px */
+  --space-20: 5rem;    /* 80px */
+  --space-24: 6rem;    /* 96px */
+
+  /* Border Radii */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 9999px;
+
+  /* Shadows - Minimalist Architectural Depth */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.08);
+  --shadow-dropdown: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Z-Index Layers */
+  --z-base: 1;
+  --z-sticky: 100;
+  --z-header: 200;
+  --z-drawer: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+
+  /* Breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1440px;
+
+  /* Layout Max Widths */
+  --container-max: 1320px;
+  --container-narrow: 840px;
+}

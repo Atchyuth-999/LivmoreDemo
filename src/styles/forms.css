@@ -1,0 +1,103 @@
+/* Standardized Form Architecture */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  text-align: left;
+}
+
+.form-label {
+  font-size: 0.8125rem; /* 13px */
+  font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-label .required {
+  color: var(--color-danger);
+  margin-left: 2px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  font-size: 0.9375rem; /* 15px */
+  padding: 0.75rem 0.875rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 1px var(--color-border-focus);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #A8A29E;
+}
+
+.form-input:disabled,
+.form-select:disabled,
+.form-textarea:disabled {
+  background-color: var(--color-canvas-subtle);
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+}
+
+.form-input.error,
+.form-select.error,
+.form-textarea.error {
+  border-color: var(--color-danger);
+}
+
+.form-error {
+  font-size: 0.75rem; /* 12px */
+  color: var(--color-danger);
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+.form-helper {
+  font-size: 0.75rem; /* 12px */
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+/* Honeypot field (anti-spam) - hidden from human eyes */
+.hidden-honeypot {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  tabindex: -1;
+}
+
+/* Turnstile Security Widget simulation / container */
+.turnstile-box {
+  background-color: #F8F9FA;
+  border: 1px solid #E5E7EB;
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+  font-size: 0.8125rem;
+  color: #4B5563;
+}

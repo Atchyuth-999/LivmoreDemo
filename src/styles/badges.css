@@ -1,0 +1,51 @@
+/* Standardized Badge & Status Indicators */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 0.75rem; /* 12px */
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.badge-neutral {
+  background-color: var(--color-canvas-subtle);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+}
+
+.badge-accent {
+  background-color: var(--color-accent-subtle);
+  color: var(--color-accent-hover);
+}
+
+/* Lead Status Badges (Admin) */
+.badge-status-new {
+  background-color: var(--color-status-new-bg);
+  color: var(--color-status-new-text);
+  border: 1px solid rgba(29, 78, 216, 0.2);
+}
+
+.badge-status-contacted {
+  background-color: var(--color-status-contacted-bg);
+  color: var(--color-status-contacted-text);
+  border: 1px solid rgba(180, 83, 9, 0.2);
+}
+
+.badge-status-qualified {
+  background-color: var(--color-status-qualified-bg);
+  color: var(--color-status-qualified-text);
+  border: 1px solid rgba(21, 128, 61, 0.2);
+}
+
+.badge-status-closed {
+  background-color: var(--color-status-closed-bg);
+  color: var(--color-status-closed-text);
+  border: 1px solid rgba(75, 85, 99, 0.2);
+}
